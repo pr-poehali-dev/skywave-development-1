@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Возможности
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Что умеет EnglishQuest</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "🎮 Игровые квесты",
+              description: "Школьник проходит приключения и учит слова, грамматику и фразы в контексте живых историй",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "🏆 Система наград",
+              description: "Монеты, бейджи, лидерборд — соревнуйся с друзьями и мотивируй себя учиться каждый день",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "📱 Везде и всегда",
+              description: "Работает на телефоне, планшете и компьютере — учись в школе, дома или в дороге",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "📊 Прогресс для родителей",
+              description: "Родители видят, сколько времени учится ребёнок и какие темы уже освоены",
               direction: "bottom",
             },
           ].map((service, i) => (

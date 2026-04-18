@@ -44,11 +44,11 @@ export function ContactSection() {
               }`}
             >
               <h2 className="mb-2 font-sans text-4xl font-light leading-[1.05] tracking-tight text-foreground md:mb-3 md:text-7xl lg:text-8xl">
-                Давайте
+                Начни
                 <br />
-                поговорим
+                играть
               </h2>
-              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Свяжитесь с нами</p>
+              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Первый квест — бесплатно</p>
             </div>
 
             <div className="space-y-4 md:space-y-8">
@@ -64,7 +64,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">Email</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  info@flowrise.dev
+                  hello@englishquest.ru
                 </p>
               </a>
 
@@ -78,7 +78,7 @@ export function ContactSection() {
                   <MapPin className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Локация</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">Москва, Россия</p>
+                <p className="text-base text-foreground md:text-2xl">Россия, онлайн</p>
               </div>
 
               <div
@@ -87,7 +87,7 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "500ms" }}
               >
-                {["Telegram", "VK", "LinkedIn", "GitHub"].map((social) => (
+                {["Telegram", "VK", "Instagram", "YouTube"].map((social) => (
                   <a
                     key={social}
                     href="#"
@@ -150,7 +150,7 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   className="w-full border-b border-foreground/30 bg-transparent py-1.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Расскажите о вашем проекте..."
+                  placeholder="Имя ребёнка, класс и вопрос..."
                 />
               </div>
 
@@ -165,10 +165,10 @@ export function ContactSection() {
                   size="lg"
                   className="w-full disabled:opacity-50"
                 >
-                  {isSubmitting ? "Отправка..." : "Отправить"}
+                  {isSubmitting ? "Отправка..." : "Начать бесплатно 🚀"}
                 </MagneticButton>
                 {submitSuccess && (
-                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Сообщение отправлено!</p>
+                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Отлично! Мы напишем тебе в течение часа 🎉</p>
                 )}
               </div>
             </form>
